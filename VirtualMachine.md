@@ -135,3 +135,9 @@ sudo lvextend -L 480G /dev/mapper/ubuntu--vg-ubuntu--lv
 sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
 df -h
 ```
+
+5. Edit VM configurations  
+```shell
+virsh edit sos_build_vm #sos_build_vm is VM name
+virsh start sos_build_vm # After modify and then start the VM
+```
